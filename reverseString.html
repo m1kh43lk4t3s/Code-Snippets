@@ -1,0 +1,13 @@
+<input type="text" id="userinput" onchange="writeText()">
+<p id="output"></p>
+
+
+<script type="text/javascript">
+  function writeText(){
+  var writeString = document.querySelector('#userinput').value;
+  writeString = writeString.split('');
+  writeString = writeString.reverse();
+  writeString = writeString.join('');
+  document.querySelector('#output').innerHTML = writeString;
+}
+</script>
